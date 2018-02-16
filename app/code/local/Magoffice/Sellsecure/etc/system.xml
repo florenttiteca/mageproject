@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <magoffice_sellsecure module="magoffice_sellsecure">
+            <label>Sell Secure</label>
+            <tab>sales</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <login translate="label">
+                    <label>Identifiants</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <seller_site translate="label">
+                            <label>Site commerçant</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </seller_site>
+                        <siteidfac translate="label">
+                            <label>Siteidfac</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </siteidfac>
+                        <sideidcmc translate="label">
+                            <label>Siteidcmc</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sideidcmc>
+                    </fields>
+                </login>
+                <flow_url_mapping translate="label">
+                    <label>flow_url_mapping</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <execute_mode_activation translate="label">
+                            <label>Mode d'exécution / activation</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>magoffice_sellsecure/source_executionmode</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </execute_mode_activation>
+                        <product_types_matrix translate="label">
+                            <label>Mapping types de produit</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_types_matrix>
+                        <default_type translate="label">
+                            <label>Type par défaut</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </default_type>
+                        <url_service_deposit_request_scoring translate="label">
+                            <label>URL du service dépôt de demande Scoring</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </url_service_deposit_request_scoring>
+                        <url_service_deposit_pre_scoring translate="label">
+                            <label>URL du service dépôt du Pre-Scoring</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </url_service_deposit_pre_scoring>
+                        <url_service_recovery_scoring translate="label">
+                            <label>URL du service de récupération du Scoring</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </url_service_recovery_scoring>
+                        <url_service_evaluation_detail translate="label">
+                            <label>URL du service de détail d’évaluation</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </url_service_evaluation_detail>
+                        <shipping_mode_code_matrix translate="label">
+                            <label>Mapping code mode de livraison</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shipping_mode_code_matrix>
+                        <payment_method_code_matrix translate="label">
+                            <label>Mapping code méthode de paiement</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </payment_method_code_matrix>
+                    </fields>
+                </flow_url_mapping>
+                <orders_eligibility translate="label">
+                    <label>Eligibilité des commandes</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <accepted_payment_modes translate="label">
+                            <label>Mode de paiement acceptés</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>magoffice_sellsecure/source_paymentmethods</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </accepted_payment_modes>
+                        <accepted_order_states translate="label">
+                            <label>Etat de commandes acceptés</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>magoffice_sellsecure/source_orderstatus</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </accepted_order_states>
+                        <recovery_time_limit translate="label">
+                            <label>Délai de récupération</label>
+                            <comment>en heure</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </recovery_time_limit>
+                        <force_recovery_time_limit translate="label">
+                            <label>Délai commandes forcées</label>
+                            <comment>en jours</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </force_recovery_time_limit>
+                    </fields>
+                </orders_eligibility>
+                <threshold_evaluation translate="label">
+                    <label>Seuil des évaluations</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <max_score translate="label">
+                            <label>Seuil score très fiable</label>
+                            <comment>(entier) Seuil des commandes sans aucun risque</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </max_score>
+                        <reliable_score translate="label">
+                            <label>Seuil score fiable</label>
+                            <comment>(entier) Seuil des commandes fiables</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </reliable_score>
+                        <warning_score translate="label">
+                            <label>Seuil score limite</label>
+                            <comment>
+                                (entier) Seuil des commandes dont la fiabilité est limite.
+                                Toute commande dont le score est inférieur à ce score sera considérée comme non fiable.
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </warning_score>
+                    </fields>
+                </threshold_evaluation>
+            </groups>
+        </magoffice_sellsecure>
+    </sections>
+</config>

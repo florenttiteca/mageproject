@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magoffice_Chili>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magoffice_Chili>
+    </modules>
+</config>

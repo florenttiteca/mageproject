@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cgi_LengowExport>
+            <version>1.0.0</version>
+        </Cgi_LengowExport>
+    </modules>
+    <global>
+        <models>
+            <cgi_lenexport>
+                <class>Cgi_LengowExport_Model</class>
+            </cgi_lenexport>
+            <lenexport>
+                <rewrite>
+                    <generate>Cgi_LengowExport_Model_Generate</generate>
+                    <system_config_source_getattributes>Cgi_LengowExport_Model_System_Config_Source_Getattributes</system_config_source_getattributes>
+                </rewrite>
+            </lenexport>
+        </models>
+    </global>
+</config>

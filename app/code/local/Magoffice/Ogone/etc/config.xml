@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Magoffice_Ogone>
+            <version>0.1.0</version>
+        </Magoffice_Ogone>
+    </modules>
+    <global>
+        <helpers>
+            <magofficeogone>
+                <class>Magoffice_Ogone_Helper</class>
+            </magofficeogone>
+            <ops>
+                <rewrite>
+                    <directlink>Magoffice_Ogone_Helper_Directlink</directlink>
+                </rewrite>
+            </ops>
+        </helpers>
+        <models>
+            <magofficeogone>
+                <class>Magoffice_Ogone_Model</class>
+            </magofficeogone>
+        </models>
+        <template>
+            <email>
+                <aborted_credit_memo_email_template translate="label" module="magofficeogone">
+                    <label>Credit Memo Aborted</label>
+                    <file>aborted_credit_memo.html</file>
+                    <type>html</type>
+                </aborted_credit_memo_email_template>
+                <unclosed_transactions_alert_email_template translate="label" module="magofficeogone">
+                    <label>Unclosed Transactions Alert</label>
+                    <file>unclosed_transactions_alert.html</file>
+                    <type>html</type>
+                </unclosed_transactions_alert_email_template>
+            </email>
+        </template>
+    </global>
+    <default>
+        <payment_services>
+            <ops_advanced_log>
+                <enable>0</enable>
+                <dir>ogone</dir>
+                <file_pattern>ogone_%date%.csv</file_pattern>
+                <csv_separator>|</csv_separator>
+            </ops_advanced_log>
+            <transation_tracking>
+                <alert_time_limit>24</alert_time_limit>
+            </transation_tracking>
+        </payment_services>
+    </default>
+</config>

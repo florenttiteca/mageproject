@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<config>
+    <sections>
+        <payment_services>
+            <groups>
+                <ops_advanced_log translate="label comment" module="ops">
+                    <label>Ogone Advanced Log</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enable>
+                        <file_pattern translate="label">
+                            <label>File pattern</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </file_pattern>
+                        <csv_separator translate="label">
+                            <label>Csv Separator</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </csv_separator>
+                    </fields>
+                </ops_advanced_log>
+                <transation_tracking translate="label comment" module="ops">
+                    <label>Suivi des transactions</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1010</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <alert_time_limit translate="label">
+                            <label>Délai d'alerte</label>
+                            <comment>Délai pour lancer un email sur une transaction ouverte (depuis X heure)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </alert_time_limit>
+                    </fields>
+                </transation_tracking>
+            </groups>
+        </payment_services>
+    </sections>
+</config>

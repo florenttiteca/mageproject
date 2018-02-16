@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://magoffice.cgifrlille1.com/" />
+<title>Changement magasin préféré</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Changement magasin préféré</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>${speedTest}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>${timeout}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='user-store']/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=div.fancybox-skin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//div[@id='listeMag']/div[2]/ul/li[25]/a/span)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>//img[contains(src,'ajax-loader.gif']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='user-store']/div/ul/li[1]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='tabs-1']/div[5]/p[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='content']/ul/li/ul/li/span</td>
+	<td>Votre magasin favori a été mis à jour.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='user-links']/div/ul/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.name</td>
+	<td>Lille Villeneuve d'Ascq</td>
+</tr>
+</tbody></table>
+</body>
+</html>

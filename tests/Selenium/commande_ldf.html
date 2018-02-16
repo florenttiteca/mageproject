@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://magoffice.cgifrlille1.com/" />
+<title>Commande LDF</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Commande LDF</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>${speedTest}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>${timeout}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=- Table ronde</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//img[@alt='Add to cart'])[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>id=fancybox-loading</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=popup-ajout-panier-continuer-achat</td>
+	<td></td>
+</tr>
+<!--Validation du Panier-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Voir mon panier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Voir mon panier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cart-cgv-paiement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='boutons-panier']/div[2]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>id=fancybox-loading</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>//div[@class='loader-wait']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#checkmo &gt; div.paiement-choise-elem &gt; div.paiement-choise-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>//div[@class='loader-wait']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='paiement-cheque-form']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=tnr-confirm-and-pay-orders</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

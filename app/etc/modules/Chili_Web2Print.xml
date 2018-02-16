@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Chili_Web2print>
+             <active>true</active>
+             <codePool>local</codePool>
+             <depends>
+             </depends>
+        </Chili_Web2print>
+    </modules>
+</config>

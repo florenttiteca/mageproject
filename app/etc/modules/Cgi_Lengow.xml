@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cgi_LengowExport>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Lengow_Export />
+            </depends>
+        </Cgi_LengowExport>
+        <Cgi_LengowSync>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Lengow_Sync />
+            </depends>
+        </Cgi_LengowSync>
+    </modules>
+</config>

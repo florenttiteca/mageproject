@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magoffice_Cashflow>
+            <version>0.2.1</version>
+        </Magoffice_Cashflow>
+    </modules>
+    <global>
+        <helpers>
+            <magoffice_cashflow>
+                <class>Magoffice_Cashflow_Helper</class>
+            </magoffice_cashflow>
+        </helpers>
+        <models>
+            <magoffice_cashflow>
+                <class>Magoffice_Cashflow_Model</class>
+            </magoffice_cashflow>
+        </models>
+        <resources>
+            <magoffice_cashflow_setup>
+                <setup>
+                    <module>Magoffice_Cashflow</module>
+                    <!--<class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>-->
+                </setup>
+            </magoffice_cashflow_setup>
+        </resources>
+    </global>
+    <default>
+        <flux_cashflow>
+            <cashflow_control>
+                <nb_days_to_consolidated>40</nb_days_to_consolidated>
+            </cashflow_control>
+        </flux_cashflow>
+    </default>
+</config>

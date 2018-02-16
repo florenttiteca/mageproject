@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cgi_DonneesUfp>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Cgi_DonneesUfp>
+    </modules>
+</config>

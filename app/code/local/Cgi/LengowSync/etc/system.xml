@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<lensync translate="label" module="lensync">
+			<groups>
+				<test_mode_magoffice translate="label" module="lensync">
+					<label>Test Mode MagOffice</label>
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>1</show_in_store>
+					<sort_order>3</sort_order>
+					<fields>
+						<mode_test>
+							<label>Mode test</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</mode_test>
+						<url_call_import>
+							<label>URL à appeler pour la récupération de commande</label>
+							<comment>Les paramètres 'httpcode' et 'filename' sont obligatoires dans cette Url</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>1</show_in_store>
+						</url_call_import>
+					</fields>
+				</test_mode_magoffice>
+				<config_trade_ws_market_place translate="label" module="lensync">
+					<label>Configuration des échanges WS Market Place</label>
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>1</show_in_store>
+					<sort_order>4</sort_order>
+					<comment><![CDATA[
+					<strong>[MARKET_PLACE]</strong> : Code de la market place.<br />
+					<strong>[FEED_ID]</strong> : Identifiant du flux.<br />
+					<strong>[ORDER_MP_NUMBER]</strong> : Identifiant externe à la commande.<br />
+					<strong>[CARRIER_CODE]</strong> : Nom du transporteur par plateforme.<br />
+					<strong>[POSTAL_CODE]</strong> : Code Postal de livraison.<br />
+					<strong>[CARRIER_NAME]</strong> : Nom du transporteur.<br />
+					]]></comment>
+					<fields>
+						<heading_textarea translate="label">
+							<label>Configuration :</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</heading_textarea>
+						<textarea_json>
+							<frontend_type>textarea</frontend_type>
+							<frontend_class>textarea-json</frontend_class>
+							<comment>Complete with a JSON format.</comment>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>1</show_in_store>
+						</textarea_json>
+					</fields>
+				</config_trade_ws_market_place>
+			</groups>
+		</lensync>
+	</sections>
+</config>

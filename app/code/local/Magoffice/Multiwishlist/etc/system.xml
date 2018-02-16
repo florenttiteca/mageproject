@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <magoffice_multiwishlist module="magoffice_multiwishlist">
+            <label>Wishlist</label>
+            <tab>pagec2bi</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <wishlist_configuration translate="label">
+                    <label>Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <max_customer_wishlist translate="label">
+                            <label>Nombre maximum de liste "manuelle" pour un client</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </max_customer_wishlist>
+                        <wishlist_favorite_products_name translate="label">
+                            <label>Nom de la Wishlist (utilisé pour le front)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wishlist_favorite_products_name>
+                        <wishlist_favorite_minimum_orders translate="label">
+                            <label>Nombre de commande minimum</label>
+                            <comment>première condition pour calculer la liste automatique</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wishlist_favorite_minimum_orders>
+                        <wishlist_favorite_days_for_minimum_order translate="label">
+                            <label>Nombre de jours pour le minimum de commande</label>
+                            <comment>Période pour laquelle un client doit posséder au moins le minimum de commande pour calcul de la liste automatique</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wishlist_favorite_days_for_minimum_order>
+                        <wishlist_favorite_days_from_last_order translate="label">
+                            <label>Nombre de jours depuis la dernière commande</label>
+                            <comment>deuxième condition pour calculer la liste automatique</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wishlist_favorite_days_from_last_order>
+                        <wishlist_favorite_maximum_products translate="label">
+                            <label>Nombre de produit maximum</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wishlist_favorite_maximum_products>
+                    </fields>
+                </wishlist_configuration>
+            </groups>
+        </magoffice_multiwishlist>
+    </sections>
+</config>

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magoffice_Euratech>
+            <version>0.1.2</version>
+        </Magoffice_Euratech>
+    </modules>
+    <global>
+        <blocks>
+            <magoffice_euratech>
+                <class>Magoffice_Euratech_Block</class>
+            </magoffice_euratech>
+        </blocks>
+        <models>
+            <magoffice_euratech>
+                <class>Magoffice_Euratech_Model</class>
+            </magoffice_euratech>
+        </models>
+        <helpers>
+            <magoffice_euratech>
+                <class>Magoffice_Euratech_Helper</class>
+            </magoffice_euratech>
+        </helpers>
+        <resources>
+            <magoffice_euratech_setup>
+                <setup>
+                    <module>Magoffice_Euratech</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </magoffice_euratech_setup>
+        </resources>
+        <events>
+            <sales_order_invoice_pay>
+                <observers>
+                    <magoffice_euratech_send_mail>
+                        <type>singleton</type>
+                        <class>magoffice_euratech/observer</class>
+                        <method>sendStoreEmail</method>
+                    </magoffice_euratech_send_mail>
+                </observers>
+            </sales_order_invoice_pay>
+        </events>
+    </global>
+    <default>
+        <carriers>
+            <appro>
+                <active>1</active>
+                <visible>1</visible>
+                <title>Appro</title>
+                <type_livr>domicile</type_livr>
+                <delai>4h, si commande passée avant 12h</delai>
+                <weight>0 à 30 kg</weight>
+                <logo>default/appro_euratech.png</logo>
+                <detail><![CDATA[Tout type de produit du site]]></detail>
+                <label_disable>Appro Euratech indisponible</label_disable>
+                <label_livraison><![CDATA[Appro Euratech]]></label_livraison>
+                <model>Magoffice_Euratech_Model_Carrier_Appro</model>
+                <config>
+                    <![CDATA[
+                        # Appro Euratech
+                        {
+                            code: "euratech",
+                            label: "Euratech",
+                            fees: 0,
+                        }
+                    ]]>
+                </config>
+                <debug>0</debug>
+                <stop_to_first_match>0</stop_to_first_match>
+                <sort_order>150</sort_order>
+            </appro>
+            <express>
+                <active>1</active>
+                <visible>1</visible>
+                <title>Express</title>
+                <type_livr>domicile</type_livr>
+                <delai>4h, si commande passée avant 12h</delai>
+                <weight>0 à 30 kg</weight>
+                <logo>default/express_euratech.png</logo>
+                <detail><![CDATA[Tout type de produit du site]]></detail>
+                <label_disable>Express Euratech indisponible</label_disable>
+                <label_livraison><![CDATA[Express Euratech]]></label_livraison>
+                <model>Magoffice_Euratech_Model_Carrier_Express</model>
+                <config>
+                    <![CDATA[
+                        # Express Euratech
+                        {
+                            code: "euratech",
+                            label: "Euratech",
+                            fees: 0,
+                        }
+                    ]]>
+                </config>
+                <debug>0</debug>
+                <stop_to_first_match>0</stop_to_first_match>
+                <sort_order>160</sort_order>
+            </express>
+        </carriers>
+        <payment>
+            <appro_magasin>
+                <active>1</active>
+                <model>magoffice_euratech/method_appro</model>
+                <order_status>shipment_processing</order_status>
+                <title>Commande d'appro</title>
+                <allowspecific>0</allowspecific>
+            </appro_magasin>
+        </payment>
+    </default>
+</config>
